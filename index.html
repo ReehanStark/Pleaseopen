@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>I'm Sorry ❤️</title>
+    <title>For You ❤️</title>
+
+    <!-- Dreamy Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ff758c, #ff7eb3);
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9ec4, #ffc3e6, #ffd6f5);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
             text-align: center;
-            color: white;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
-            margin-top: 15%;
+            margin-top: 10%;
             padding: 20px;
         }
 
         h1 {
-            font-size: 50px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 22px;
-            max-width: 600px;
+            font-size: 20px;
+            max-width: 650px;
             margin: auto;
-            line-height: 1.6;
+            line-height: 1.8;
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
         }
 
         button {
-            margin-top: 30px;
-            padding: 15px 30px;
+            margin-top: 40px;
+            padding: 15px 35px;
             font-size: 18px;
             border: none;
-            border-radius: 30px;
+            border-radius: 40px;
             cursor: pointer;
-            background-color: white;
-            color: #ff4d6d;
+            background: white;
+            color: #ff4da6;
+            font-weight: 500;
             transition: 0.3s;
         }
 
         button:hover {
-            background-color: #ffe6eb;
+            transform: scale(1.1);
+            background: #ffe6f2;
         }
 
-        #hiddenMessage {
+        #giftSection {
             display: none;
-            margin-top: 30px;
-            font-size: 24px;
-            font-weight: bold;
+            margin-top: 40px;
+            font-size: 22px;
+            animation: fadeIn 2s ease forwards;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .emoji {
+            font-size: 60px;
+            margin: 15px;
+        }
+
+        .smallMessage {
+            font-family: 'Great Vibes', cursive;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>I'm Sorry ❤️</h1>
+        <h1>I'm Truly Sorry 💗</h1>
 
         <p>
-            I know I hurt you.
-            I didn’t mean to.
-            You mean more to me than my ego or my mistakes.
-            Please give me one chance to make things right.
+            My love,  
+            I’m deeply sorry for putting you in an awkward situation.  
+            You never deserved that discomfort.  
+
+            I care about you more than words can explain,  
+            and the last thing I ever want is for you to feel uneasy because of me.  
+
+            Please forgive my mistake.  
+            My heart only wants to protect your smile, not disturb it.
         </p>
 
-        <button onclick="showMessage()">Click if you still love me</button>
+        <button onclick="showGift()">Click here, my love 💕</button>
 
-        <div id="hiddenMessage">
-            I promise I'll do better. Always you. ❤️
+        <div id="giftSection">
+            <div class="emoji">💐</div>
+            <div class="emoji">🧸</div>
+
+            <div class="smallMessage">
+                A virtual bouquet and a teddy bear  
+                for the most precious girl in my world ❤️
+            </div>
         </div>
     </div>
 
     <script>
-        function showMessage() {
-            document.getElementById("hiddenMessage").style.display = "block";
+        function showGift() {
+            document.getElementById("giftSection").style.display = "block";
         }
     </script>
 
