@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I'm Sorry ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            margin-top: 15%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 22px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: white;
+            color: #ff4d6d;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffe6eb;
+        }
+
+        #hiddenMessage {
+            display: none;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>I'm Sorry ❤️</h1>
+
+        <p>
+            I know I hurt you.
+            I didn’t mean to.
+            You mean more to me than my ego or my mistakes.
+            Please give me one chance to make things right.
+        </p>
+
+        <button onclick="showMessage()">Click if you still love me</button>
+
+        <div id="hiddenMessage">
+            I promise I'll do better. Always you. ❤️
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
